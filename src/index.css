@@ -43,15 +43,14 @@ html {
   --green-light: #d1e7dd;
   --green-dark: #0f5132;
 
-  --small-text: 0.875rem;
-  --extra-small-text: 0.7em;
+ 
   /* rest of the vars */
-  --backgroundColor: var(--grey-50);
+  --backgroundColor: var(--grey-300);
   --textColor: var(--grey-900);
   --borderRadius: 0.25rem;
   --letterSpacing: 1px;
   --transition: 0.3s ease-in-out all;
-  --max-width: 1120px;
+  --max-width: 120px;
   --fixed-width: 600px;
 
   /* box shadow*/
@@ -196,7 +195,7 @@ h5 {
 }
 
 
-/* ============= PROJECT CSS =============== */
+/* ============= PROJECT Grocery Bud CSS =============== */
 
 .section-center {
   width: 90vw;
@@ -256,3 +255,4 @@ form h4 {
 .Toastify__toast {
   text-transform: capitalize;
 }
+

@@ -6,8 +6,7 @@ const SingleItem = ({ item, removeItem, editItem }) => {
         <div className='single-item'>
             <input
                 type="checkbox"
-                name=""
-                id=""
+                className='inputBar'
                 checked={item.completed}
                 onChange={() => editItem(item.id)} />
             <p style={{ textDecoration: item.completed && "line-through", textTransform: "capitalize" }}>{item.name}</p>
