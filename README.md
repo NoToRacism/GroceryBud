@@ -4,30 +4,31 @@ Grocery Bud is a straightforward grocery list application built with React. It a
 
 ## ✨ Features
 
-* **Add Items:** Quickly add new grocery items via an input form.
-* **Remove Items:** Delete items from the list with a dedicated button per item.
-* **Mark as Completed:** Toggle the completion status of items with a checkbox; completed items are visually struck through.
-* **Persistent List:** Grocery items are saved in the browser's `localStorage`, so your list remains available even after closing or refreshing the page.
-* **User Feedback:** Uses `react-toastify` to provide notifications for adding items, deleting items, and validation errors (e.g., submitting an empty item).
-* **Unique IDs:** Each item is assigned a unique ID using `nanoid`.
+- **Add Items:** Quickly add new grocery items via an input form.
+- **Remove Items:** Delete items from the list with a dedicated button per item.
+- **Mark as Completed:** Toggle the completion status of items with a checkbox; completed items are visually struck through.
+- **Persistent List:** Grocery items are saved in the browser's `localStorage`, so your list remains available even after closing or refreshing the page.
+- **User Feedback:** Uses `react-toastify` to provide notifications for adding items, deleting items, and validation errors (e.g., submitting an empty item).
+- **Unique IDs:** Each item is assigned a unique ID using `nanoid`.
 
 ## 🚀 Live Demo
 
-[Link to Live Demo]() 
+[Link to Live Demo](https://gorcerybudnoto.netlify.app/)
 
 ## 🛠️ Technologies Used
 
-* **Frontend:** React.js (using Hooks like `useState`)
-* **Unique IDs:** `nanoid`
-* **Notifications:** `react-toastify`
-* **Storage:** Browser Local Storage API (`localStorage.setItem`, `localStorage.getItem`, `JSON.stringify`, `JSON.parse`)
-* **Styling:** CSS (using classes like `.section-center`, `.form-control`, `.single-item`, etc., and inline styles for text decoration)
+- **Frontend:** React.js (using Hooks like `useState`)
+- **Unique IDs:** `nanoid`
+- **Notifications:** `react-toastify`
+- **Storage:** Browser Local Storage API (`localStorage.setItem`, `localStorage.getItem`, `JSON.stringify`, `JSON.parse`)
+- **Styling:** CSS (using classes like `.section-center`, `.form-control`, `.single-item`, etc., and inline styles for text decoration)
 
 ## ⚙️ Setup and Installation
 
 To run this project locally, follow these steps:
 
 1.  **Clone the repository:**
+
     ```bash
     git clone <your-repository-url>
     cd <your-repository-directory>
@@ -35,6 +36,7 @@ To run this project locally, follow these steps:
 
 2.  **Install dependencies:**
     Make sure you have Node.js and npm (or yarn) installed.
+
     ```bash
     npm install
     # or
@@ -60,15 +62,15 @@ To run this project locally, follow these steps:
 
 ## 🏗️ Project Structure
 
-* `src/`: Contains the main source code.
-    * `App.jsx`: The main application component. Manages the `items` state, handles adding, removing, and editing (toggling completion) items. Interacts with `localStorage` and renders `Form` and `Items`. Sets up `ToastContainer`.
-    * `Form.jsx`: Renders the input field and submit button. Handles form submission, basic validation (non-empty input), and calls the `addItem` prop.
-    * `Items.jsx`: Receives the `items` array and maps over it, rendering a `SingleItem` component for each item, passing down necessary props (`removeItem`, `editItem`).
-    * `SingleItem.jsx`: Displays an individual grocery item, including its name, a checkbox for completion status, and a delete button. Handles checkbox changes and delete button clicks by calling props passed from `App.jsx`.
-    * `main.jsx` / `index.js`: Entry point of the React application, likely imports `react-toastify` CSS.
-    * CSS Files (`index.css`, `App.css`, etc.): (Assumed) Contain the necessary styles for layout and appearance.
-* `public/`: Contains static assets like `index.html`.
-* `package.json`: Lists project dependencies and scripts.
+- `src/`: Contains the main source code.
+  - `App.jsx`: The main application component. Manages the `items` state, handles adding, removing, and editing (toggling completion) items. Interacts with `localStorage` and renders `Form` and `Items`. Sets up `ToastContainer`.
+  - `Form.jsx`: Renders the input field and submit button. Handles form submission, basic validation (non-empty input), and calls the `addItem` prop.
+  - `Items.jsx`: Receives the `items` array and maps over it, rendering a `SingleItem` component for each item, passing down necessary props (`removeItem`, `editItem`).
+  - `SingleItem.jsx`: Displays an individual grocery item, including its name, a checkbox for completion status, and a delete button. Handles checkbox changes and delete button clicks by calling props passed from `App.jsx`.
+  - `main.jsx` / `index.js`: Entry point of the React application, likely imports `react-toastify` CSS.
+  - CSS Files (`index.css`, `App.css`, etc.): (Assumed) Contain the necessary styles for layout and appearance.
+- `public/`: Contains static assets like `index.html`.
+- `package.json`: Lists project dependencies and scripts.
 
 ## 🤝 Contributing
 
@@ -80,4 +82,3 @@ Contributions are welcome! If you'd like to contribute, please follow these step
 4.  Commit your changes (`git commit -m 'Add some feature'`).
 5.  Push to the branch (`git push origin feature/your-feature-name`).
 6.  Open a Pull Request.
-

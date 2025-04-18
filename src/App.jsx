@@ -36,13 +36,13 @@ const App = () => {
     setLocalStorage(newItems)
     toast.success('Item added to the List')
   }
-  
+
   const removeItem = (itemId) => {
     const newItems = items.filter((item) => item.id !== itemId)
     setItems(newItems)
     setLocalStorage(newItems)
     toast.success('Item Deleted from the List')
-    
+
   }
 
 
